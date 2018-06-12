@@ -12,7 +12,7 @@ export class HomePage {
   posts: any;
 
   constructor(public navCtrl: NavController, public http: Http) {
-    this.http.get('https://www.reddit.com/r/gifs/new/.json?limit=10').map(res => res.json()).subscribe(data => {
+    this.http.get('https://www.reddit.com/r/gifs/hot/.json?limit=10').map(res => res.json()).subscribe(data => {
         this.posts = data.data.children;
     });
 

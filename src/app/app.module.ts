@@ -7,6 +7,8 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 import { servicePage } from '../pages/services/services';
+import { SettingsPage } from '../pages/settings/settings';
+import { WeatherProvider } from '../pages/weather/weather';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -16,7 +18,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MyApp,
     HomePage,
     ListPage,
-    servicePage
+    servicePage,
+    SettingsPage,
+    WeatherProvider
   ],
   imports: [
     BrowserModule,
@@ -28,7 +32,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MyApp,
     HomePage,
     ListPage,
-    servicePage
+    servicePage,
+    SettingsPage,
+    WeatherProvider
   ],
   providers: [
     StatusBar,
